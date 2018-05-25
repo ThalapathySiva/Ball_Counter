@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b"
+    tools:context="com.example.sivaram.ball_counter.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="TEAM A"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#dfd8d8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sa"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="5dp"
+                android:gravity="clip_horizontal"
+                android:padding="2dp"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#dfd8d8"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/a3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="aplusthree"
+                android:padding="2dp"
+                android:text="+ 3 POINTS"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/a2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="aplustwo"
+                android:padding="2dp"
+                android:text="+2 points"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/af"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="afree"
+                android:padding="2dp"
+                android:text="Free throw"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:gravity="clip_horizontal"
+                android:padding="4dp"
+                android:text="TEAM B"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#dfd8d8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sb"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#dfd8d8"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:onClick="bplusthree"
+                android:layout_marginRight="10dp"
+                android:padding="2dp"
+                android:text="+ 3 POINTS"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:onClick="bplustwo"
+                android:padding="2dp"
+                android:layout_marginRight="10dp"
+                android:text="+2 points"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/bf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:onClick="bfree"
+                android:layout_marginRight="10dp"
+                android:padding="2dp"
+                android:text="Free throw"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/win"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/r"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:onClick="res"
+            android:text="reset"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/r"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="bacl"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="back"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>
